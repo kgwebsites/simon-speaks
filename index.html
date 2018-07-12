@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Simon Speaks</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.4/css/bootstrap2/bootstrap-switch.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="container text-center">
+  <h1 class="mb-5">Simon Speaks</h1>
+  <div class="row">
+    <div class="col-sm-4 text-right" id="settings">
+      <div class="mb-2">Practice Mode</div>
+      <label class="switch">
+        <input type="checkbox" name="practice">
+        <span class="slider round"></span>
+      </label><br>
+      <div class="mb-3"><button class="btn btn-success" onClick="start()">START</button></div>
+      Count <span id="count"> 0</span>
+    </div>
+    <div class="col-sm-4">
+      <div id="board" oncontextmenu="return false">
+        <button onClick="playerBuzz(1)" class="btn btn-outline-success" id="one" value="1"></button>
+        <button onClick="playerBuzz(2)" class="btn btn-outline-warning" id="two" value="2"></button>
+        <button onClick="playerBuzz(3)" class="btn btn-outline-danger" id="three" value="3"></button>
+        <button onClick="playerBuzz(4)" class="btn btn-outline-primary" id="four" value="4"></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="winner" class="message text-white">WINNER</div>
+<div id="wrong" class="message text-danger">X</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
